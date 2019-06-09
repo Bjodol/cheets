@@ -1,0 +1,10 @@
+cheets-character-attributes {
+  div {
+    display: grid;
+    grid-gap: 8px;
+    grid-auto-flow: row;
+    grid-template-columns: 64px repeat(4, 32px) auto;
+    padding: 8px 0;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../globals/colors.scss";
+@import "../../globals/variables.scss";
+@import "../../globals/mixins.scss";
+
+cheets-label {
+  background: $tertiary;
+  label {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    color: $opace-white;
+    @include capitalize-first-letter;
+    span {
+      @include capitalize-first-letter;
+      display: block;
+      font-size: 12px;
+    }
+  }
+}

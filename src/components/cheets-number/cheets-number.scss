@@ -1,0 +1,35 @@
+@import "../../globals/colors.scss";
+
+cheets-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border: 1px solid $secondary;
+    font-family: EagleLage-Regular;
+    background-color: rgba(#fff, 0.7);
+    height: 32px;
+    width: 32px;
+    border-radius: 4px;
+
+    &.large {
+      width: 44px;
+      height: 44px;
+      font-size: 28px;
+    }
+
+    &.round {
+      border-radius: 50%;
+    }
+
+    &:disabled {
+      border: 1px dashed;
+      background-color: transparent;
+      color: #000;
+    }
+  }
+}

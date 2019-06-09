@@ -1,0 +1,17 @@
+$shade-steps: 20%;
+$primary: #e1bb80;
+$secondary: #806443;
+$tertiary: #443f36;
+$border: #36311f;
+$danger: #70161e;
+$noble: #f9a602;
+
+$background: radial-gradient(
+  $primary,
+  $primary,
+  $primary,
+  darken($primary, $shade-steps)
+);
+
+$font: $border;
+$opace-white: rgba(#fff, 0.7);

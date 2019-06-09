@@ -1,0 +1,7 @@
+@import "../../globals/mixins.scss";
+
+cheets-field-label {
+  @include flex-center;
+  font-size: 12px;
+  text-align: center;
+}

@@ -1,0 +1,62 @@
+@import "../../globals/colors.scss";
+@import "../../globals/variables.scss";
+
+cheets-card {
+  .card {
+    &:before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: (
+        linear-gradient(to bottom, $secondary 15px, transparent 15px),
+        linear-gradient(to right, $secondary 15px, transparent 15px),
+        linear-gradient(to bottom, $secondary 15px, transparent 15px),
+        linear-gradient(to right, $secondary 15px, transparent 15px),
+        linear-gradient(to bottom, $noble 16px, transparent 16px),
+        linear-gradient(to right, $noble 16px, transparent 16px),
+        linear-gradient(to bottom, $noble 16px, transparent 16px),
+        linear-gradient(to right, $noble 16px, transparent 16px)
+      );
+      background-repeat: no-repeat;
+      background-size: (
+        100% 15px,
+        15px 100%,
+        100% 15px,
+        15px 100%,
+        100% 16px,
+        16px 100%,
+        100% 16px,
+        16px 100%
+      );
+      background-position: 0 0, 100% 0, 0 100%, 0 0;
+      box-shadow: inset 0px 0px 32px 0px rgba(0, 0, 0, 0.75);
+    }
+    position: relative;
+    max-width: 320px;
+    height: 512px;
+    padding: 16px + $organism-gutter;
+    border-radius: 2px;
+    background-color: $primary;
+    background-size: (100% 100%);
+    background-position: (0 0);
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+
+    * {
+      z-index: 1;
+    }
+
+    .card-title {
+      .subtitle {
+        font-size: 16px;
+      }
+    }
+
+    hr {
+      border: 2px solid $tertiary;
+    }
+  }
+}

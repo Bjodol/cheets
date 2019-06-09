@@ -1,0 +1,19 @@
+@mixin standard-grid {
+  display: grid;
+  align-items: center;
+  grid-column-gap: 8px;
+  grid-auto-flow: column;
+  justify-content: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin capitalize-first-letter {
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
